@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import AboutPage from "./about-us";
 import ContactPage from "./contact-us";
 import Footer from "@/components/footer";
