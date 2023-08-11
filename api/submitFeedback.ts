@@ -8,8 +8,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         const transporter = nodemailer.createTransport({
             service: "Gmail", // Example: "Gmail"
             auth: {
-                user: "mhzn007@gmail.com",
-                pass: "-Laptop123",
+                user: "",
+                pass: "",
             },
         });
 

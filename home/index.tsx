@@ -3,6 +3,7 @@ import AboutPage from "./about-us";
 import ContactPage from "./contact-us";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import ProjectPage from "./project";
 
 const HomePage: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage: React.FC = () => {
           <span className="text-red-500 font-semibold">Graphics Design</span>.
         </p>
         <AboutPage />
+        <ProjectPage />
         <ContactPage />
       </div>
       <Footer />
