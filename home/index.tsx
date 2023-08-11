@@ -4,6 +4,8 @@ import ContactPage from "./contact-us";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ProjectPage from "./project";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const HomePage: React.FC = () => {
   return (
@@ -22,6 +24,7 @@ const HomePage: React.FC = () => {
         <AboutPage />
         <ProjectPage />
         <ContactPage />
+        <ToastContainer />
       </div>
       <Footer />
     </>

@@ -6,16 +6,18 @@ const Header: React.FC = () => {
   return (
     <header className="bg-gray-800 text-white p-4">
       <nav className="flex justify-between items-center">
-        <div className="flex items-center">
-          <Image
-            src="/dashverse.jpg"
-            alt="Dash Verse Logo"
-            width={50}
-            height={50}
-          />
+        <Link href="/">
+          <div className="flex items-center">
+            <Image
+              src="/dashverse.jpg"
+              alt="Dash Verse Logo"
+              width={50}
+              height={50}
+            />
 
-          <div className="ml-2 text-xl font-bold">Dash Verse</div>
-        </div>
+            <div className="ml-2 text-xl font-bold">Dash Verse</div>
+          </div>
+        </Link>
         <ul className="flex space-x-4">
           <li>
             <Link href="/">Home</Link>

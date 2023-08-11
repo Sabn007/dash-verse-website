@@ -65,14 +65,15 @@ const CareerPage: React.FC = () => {
           {/* Contact information or application form */}
           <h2 className="text-2xl font-bold mb-4">Apply Now</h2>
           <p className="mb-4">
-            Interested in joining our team? Send your resume and cover letter to{" "}
-            <a
+            Interested in joining our team? Send your resume and cover letter to
+            us. To send
+            {/* <a
               href="mailto:dashverse1@gmail.com"
               className="text-blue-500 mr-1"
             >
               dashverse1@gmail.com
             </a>
-            or
+            or */}
             <a
               target={"_blank"}
               href="http://forms.gle/fMgZhHMsBbtkAhZR9"
