@@ -40,9 +40,9 @@ const CareerPage: React.FC = () => {
       <div className="flex-1 p-8">
         <h1 className="text-4xl font-bold mb-4">Join Our Team</h1>
         <p className="text-lg mb-6">
-          We're always looking for talented individuals to join us in our
-          journey. If you're passionate about technology and innovation, we'd
-          love to hear from you!
+          We&apos;re always looking for talented individuals to join us in our
+          journey. If you&apos;re passionate about technology and innovation,
+          we&apos;d love to hear from you!
         </p>
         <div className="border-t-2 pt-6">
           <h2 className="text-2xl font-bold mb-4">Current Job Openings</h2>
