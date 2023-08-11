@@ -1,15 +1,36 @@
+"use client";
 import React, { useState } from "react";
 
 const ContactPage: React.FC = () => {
-  //   const [name, setName] = useState("");
-  //   const [email, setEmail] = useState("");
-  //   const [message, setMessage] = useState("");
-  //   const [submitted, setSubmitted] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here, you can add code to handle form submission, such as sending an email or storing data.
-    // setSubmitted(true);
+
+    try {
+      const response = await fetch("/api/submitFeedback.ts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error("Failed to submit feedback");
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
   };
 
   return (
@@ -31,31 +52,31 @@ const ContactPage: React.FC = () => {
           type="text"
           placeholder="Your Name"
           className="w-full border rounded p-2 mb-2"
-          //   value={name}
-          //   onChange={(e) => setName(e.target.value)}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           required
         />
         <input
           type="email"
           placeholder="Your Email"
           className="w-full border rounded p-2 mb-2"
-          //   value={email}
-          //   onChange={(e) => setEmail(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <textarea
           placeholder="Your Message"
           className="w-full border rounded p-2 mb-2"
           rows={4}
-          //   value={message}
-          //   onChange={(e) => setMessage(e.target.value)}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           required
         />
         <button
           type="submit"
           className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors duration-300"
         >
-          {false ? "Submitted" : "Submit"}
+          {submitted ? "Submitted" : "Submit"}
         </button>
       </form>
     </div>
