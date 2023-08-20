@@ -8,7 +8,6 @@ import ProjectPage from "./project";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BannerPage from "./banner";
-import Message from "@/components/Message";
 import OurTeam from "./ourTeam";
 import Testimonials from "./testimonials";
 import MessageCEO from "@/components/messageCEO";

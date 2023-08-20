@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import "../../Globals.css";
 
 const BannerPage: React.FC = () => {
   const bannerImages = [
