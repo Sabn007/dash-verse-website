@@ -9,13 +9,13 @@ const Header: React.FC = () => {
         <Link href="/">
           <div className="flex items-center">
             <Image
-              src="/dashverse.jpg"
+              src="/dashverse.png"
               alt="Dash Verse Logo"
               width={50}
               height={50}
             />
 
-            <div className="ml-2 text-xl font-bold">Dash Verse</div>
+            <div className=" text-xl font-bold">Dash Verse</div>
           </div>
         </Link>
         <ul className="flex space-x-4">

@@ -25,15 +25,16 @@ const TeamMember: FC<{
 const OurTeam: FC = () => {
   const teamMembers = [
     {
-      name: "RC Koirala",
-      role: "Head Director",
-      imageFileName: "rc.jpg",
-    },
-    {
       name: "Rajat Uprety",
       role: "Director",
       imageFileName: "rajat.jpg",
     },
+    {
+      name: "RC Koirala",
+      role: "Consultant/Legal Advisor ",
+      imageFileName: "rc.jpg",
+    },
+
     {
       name: "Sabin Maharjan",
       role: "Team/Technical Lead",
@@ -50,9 +51,9 @@ const OurTeam: FC = () => {
       imageFileName: "aakash.jpg",
     },
     {
-      name: "Aakash Koirala",
+      name: "Gautam Shah",
       role: "Mobile Developer",
-      imageFileName: "aakash.jpg",
+      imageFileName: "gautam.jpg",
     },
   ];
 

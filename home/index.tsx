@@ -11,6 +11,7 @@ import BannerPage from "./banner";
 import OurTeam from "./ourTeam";
 import Testimonials from "./testimonials";
 import MessageCEO from "@/components/messageCEO";
+import LandingPage from "./landingPage";
 
 const HomePage: React.FC = () => {
   return (
@@ -26,7 +27,8 @@ const HomePage: React.FC = () => {
           and{" "}
           <span className="text-red-500 font-semibold">Graphics Design</span>.
         </p>
-        <BannerPage />
+        <LandingPage />
+        {/* <BannerPage /> */}
         <AboutPage />
         <MessageCEO />
         <OurTeam />
