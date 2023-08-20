@@ -13,11 +13,14 @@ const MessageCEO: React.FC = () => {
             />
           </div>
           <p className="leading-relaxed text-lg">
-            It would have taken months to build the product team that we
-            inherited overnight with Leapfrog. They’re built for startup speed,
-            and they have consistently delivered a well-engineered product for
-            us. Laudio is my second partnership with Leapfrog, and they have
-            earned my trust.
+            Acquiring a product team of this caliber typically demands months of
+            effort, but with Dash Verse, it felt like an overnight
+            transformation. Designed for startup velocity, they swiftly provided
+            us with a highly capable product team that consistently delivered
+            impeccably engineered solutions. This isn't my first collaboration
+            with Dash Verse; in fact, they've secured my trust through
+            exceptional outcomes. Just like that, they've proven to be an
+            invaluable partner
           </p>
           <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
           <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
