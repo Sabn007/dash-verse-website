@@ -2,7 +2,7 @@
 import { fetchContacts } from "@/api/utils";
 import React, { useEffect, useState } from "react";
 
-function index() {
+function UserData() {
   const [user, setUser] = useState<any>();
   useEffect(() => {
     const fetchData = async () => {
@@ -35,4 +35,4 @@ function index() {
   );
 }
 
-export default index;
+export default UserData;

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const MessageCEO: React.FC = () => {
@@ -6,10 +7,12 @@ const MessageCEO: React.FC = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
           <div className="-mt-16 mb-4">
-            <img
+            <Image
               src="/aakash.jpg"
               alt="Testimonial Avatar"
               className="rounded-full w-48 h-48 mx-auto border-4 border-indigo-500"
+              height={100}
+              width={100}
             />
           </div>
           <p className="leading-relaxed text-lg">

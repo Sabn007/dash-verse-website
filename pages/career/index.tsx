@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Image from "next/image";
 import React from "react";
 import "../../globals.css";
 
@@ -49,12 +50,18 @@ const CareerPage: React.FC = () => {
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {jobVacancies.map((job) => (
               <li key={job.title} className="border p-4 rounded-lg shadow">
-                <img
-                  src={job.image}
-                  alt={job.title}
+                <div
                   className="mb-2"
                   style={{ maxWidth: "100%", height: "auto" }}
-                />
+                >
+                  <Image
+                    src={job.image}
+                    alt={job.title}
+                    layout="responsive"
+                    width={500} // Adjust the width as needed
+                    height={300} // Adjust the height as needed
+                  />
+                </div>
                 <h3 className="text-lg font-semibold">{job.title}</h3>
                 <p className="text-gray-600">{job.description}</p>
               </li>

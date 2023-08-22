@@ -1,4 +1,5 @@
 // components/Message.tsx
+import Image from "next/image";
 import React from "react";
 
 interface MessageProps {
@@ -15,7 +16,13 @@ const Message: React.FC<MessageProps> = ({ sender, content, imageUrl }) => {
         <p>{content}</p>
       </div>
       <div className="flex flex-col items-center">
-        <img src={imageUrl} alt="Attached" className="max-w-full h-auto" />
+        <Image
+          src={imageUrl}
+          alt="Attached"
+          className="max-w-full h-auto"
+          height={100}
+          width={100}
+        />
       </div>
       <p className="mt-2 text-center">{sender}</p>
     </div>
