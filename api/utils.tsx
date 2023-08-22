@@ -3,7 +3,7 @@ import axios from "axios";
 export const fetchContacts = async () => {
   try {
     const response = await axios.get(
-      "https://dashverseapi.netlify.app/.netlify/functions/contact"
+      "https://worrisome-hen-bandanna.cyclic.cloud/contacts"
     );
     return response.data;
   } catch (error) {
