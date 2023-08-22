@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import AboutPage from "./about-us";
 import ContactPage from "./contact-us";
 import Footer from "@/components/footer";
@@ -7,7 +7,6 @@ import Header from "@/components/header";
 import ProjectPage from "./project";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import BannerPage from "./banner";
 import OurTeam from "./ourTeam";
 import Testimonials from "./testimonials";
 import MessageCEO from "@/components/messageCEO";

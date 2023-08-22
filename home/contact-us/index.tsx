@@ -16,17 +16,20 @@ const ContactUs: React.FC = () => {
     setMessage("");
 
     try {
-      const response = await fetch("http://localhost:8000/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-      });
+      const response = await fetch(
+        "https://worrisome-hen-bandanna.cyclic.cloud/submit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+          }),
+        }
+      );
 
       if (response.ok) {
         setSubmitted(true);
