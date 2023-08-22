@@ -1,3 +1,4 @@
+"use client";
 import { fetchContacts } from "@/api/utils";
 import React, { useEffect } from "react";
 
